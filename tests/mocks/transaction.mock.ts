@@ -1,6 +1,7 @@
+import { TransactionInputtableFields } from "../../src/database/models/transaction.model";
 import { Transaction } from "../../src/types/Transaction";
 
-const validTransactionBody = {
+const validTransactionBody: TransactionInputtableFields = {
   name: "Conta de Luz",
   price: 100,
   type: "Saque",
@@ -15,7 +16,7 @@ const validTransactionFromDB: Transaction = {
   userId: 1
 }
 
-const emptyNameTransaction = {
+const emptyNameTransaction: TransactionInputtableFields = {
   name: '',
   price: 0,
   type: 'Saque',
